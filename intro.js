@@ -21,12 +21,12 @@ console.log(total); // 55
     count = 1 - 2 - 3 - 4 - 5  - 6  - 7  - 8  - 9  - 10
 
     -----------------------------------------------------------------------
-    Veja uma outra forma de executar o mesmo exercício.
+    ↓ Veja uma outra forma de executar o mesmo exercício.
 
     >>>> console.log(sum(range(1, 10))); //55 <<<<
 
     Fazendo um leitura deste script, console.log que dizer
-    registre(log) no console ou mostre no console, o valor da soma(sum)
+    registre(log) ou mostre no console, o valor da soma(sum)
     da extenção(range) entre os números de 1 a 10(1,10),
     ou seja 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
 
@@ -36,11 +36,26 @@ console.log(total); // 55
 
 */
 
-// Conveções Tipográficas
+//  Conveções Tipográficas
+/*
+    É muito simples definir ou declarar uma função e atribuir uma tarefa a ela.
+    Uma função é um conjunto de instruções que executa uma tarefa.
+
+    Por exemplo, o código a seguir define uma função e da um nome a ela "fac".
+    Em seguida diz que ela receberá um argumento, "n". Neste caso, a tarefa que
+    "fac" é pegar é pegar valor de "n" verificar se(if) ele é igual(==) a ZERO,
+    caso SIM, retorna 1, senão(else) ela pega o valor de "n" subtrai(n - 1)
+    e multiplica(*) por "n".
+ */
 function fac(n){
     if (n == 0)
         return 1;
     else
         return fac(n - 1) * n;
 }
-console.log(fac(8)); 40320
+console.log(fac(8)); //40320
+/*
+    Executar uma função é bem simples, você pode fazer do seguindo modo fac();
+    Então vamos ler novamete as instrução do console.log, execute e exiba no console a
+    função "fac" onde "n" é igual a 8.
+ */
