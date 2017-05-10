@@ -1,4 +1,5 @@
-/* Indrodução - Porque linguagens importam? */
+// Indrodução
+// Porque linguagens importam?
 /*
     var "total" inicia com valor igual a "0" e "count" tem valor inicial de "1".
     Ao executar o programa ele verificará a condição que lhe foi passada "count <= 10",
@@ -34,3 +35,12 @@ console.log(total); // 55
     isso será demonstrado nos próximos capítulos.
 
 */
+
+// Conveções Tipográficas
+function fac(n){
+    if (n == 0)
+        return 1;
+    else
+        return fac(n - 1) * n;
+}
+console.log(fac(8)); 40320
