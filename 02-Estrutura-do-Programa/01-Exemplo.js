@@ -80,11 +80,21 @@ console.log(Math.min(2, 4) + 100);
 // else
 //     alert("Ei! Por que você não me deu um número?");
 
-var num = Number(prompt("Digite um número", "0"));
+// var num = Number(prompt("Digite um número", "0"));
+//
+// if (num < 0)
+//     alert("Pequeno");
+// else if (num < 100)
+//     alert("Médio");
+// else
+//     alert("Grande");
 
-if (num < 0)
-    alert("Pequeno");
-else if (num < 100)
-    alert("Médio");
-else
-    alert("Grande");
+//fluxo de controle do loop
+var number = 0;
+while (number <= 12) {
+    console.log(number);
+    number = number + 2;
+}
+// 0
+// 2
+// etc...
