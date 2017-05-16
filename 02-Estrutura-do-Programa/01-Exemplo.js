@@ -53,19 +53,19 @@ console.log(Math.max(2, 4));
 console.log(Math.min(2, 4) + 100);
 
 // Solicitar e Confirmar
-//prompt("Diga-me algo que você saiba.", "...");
+prompt("Diga-me algo que você saiba.", "...");
 
 // Fluxo de Controle
-//var theNumber = Number(prompt("Escolha um número", ""));
-//alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
+var theNumber = Number(prompt("Escolha um número", ""));
+alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
 
 // Execução Condicional
 
-// var theNumber = Number(prompt("Digite um número", ""));
-// if (!isNaN(theNumber))
-//     alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
+var theNumber = Number(prompt("Digite um número", ""));
+if (!isNaN(theNumber))
+    alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
 
-// var theNumber = Number(prompt("Digite um número", ""));
+var theNumber = Number(prompt("Digite um número", ""));
 
 /*
  !isNaN - é uma função que retorna "true"(verdadeiro) se o argumento dado a ela é NaN.
@@ -75,19 +75,19 @@ console.log(Math.min(2, 4) + 100);
  Então, salvo que theNumber não seja um número, faça isso.
 
 */
-// if (!isNaN(theNumber))
-//     alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
-// else
-//     alert("Ei! Por que você não me deu um número?");
+if (!isNaN(theNumber))
+    alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
+else
+    alert("Ei! Por que você não me deu um número?");
 
-// var num = Number(prompt("Digite um número", "0"));
-//
-// if (num < 0)
-//     alert("Pequeno");
-// else if (num < 100)
-//     alert("Médio");
-// else
-//     alert("Grande");
+var num = Number(prompt("Digite um número", "0"));
+
+if (num < 0)
+    alert("Pequeno");
+else if (num < 100)
+    alert("Médio");
+else
+    alert("Grande");
 
 //fluxo de controle do loop
 var number = 0;
