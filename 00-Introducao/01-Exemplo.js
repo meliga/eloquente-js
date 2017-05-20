@@ -1,6 +1,7 @@
-//  Indrodução
-//  Porque linguagens importam?
 /*
+    • Indrodução
+    - Porque linguagens importam?
+
     var "total" inicia com valor igual a "0" e "count" tem valor inicial de "1".
     Ao executar o programa ele verificará a condição que lhe foi passada "count <= 10",
     ou seja, enquanto(while) o valor de "count" for menor ou igual a 10.

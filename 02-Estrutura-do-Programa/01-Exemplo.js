@@ -1,10 +1,8 @@
 /*
     • Capítulo 2
-      Estrutura do Programa
-*/
+    Estrutura do Programa
 
-// Variáveis
-/*
+    - Variáveis
     variáveis servem para pegar e guardar valores
 */
 var ten = 10;
@@ -43,23 +41,25 @@ luigisRest = luigisDebt - luigisPag;
 
 console.log(luigisRest); // 105
 
-// A Função console.log
+//  - A Função console.log
 var x = 30;
 console.log("o valor de x é", x); // o valor de x é 30
 
-// Retornando Valores
-// A função Math.max, que pega dois números e retorna o maior entre eles
+/*
+    - Retornando Valores
+    A função Math.max, que pega dois números e retorna o maior entre eles
+*/
 console.log(Math.max(2, 4));
 console.log(Math.min(2, 4) + 100);
 
-// Solicitar e Confirmar
+//  - Solicitar e Confirmar
 prompt("Diga-me algo que você saiba.", "...");
 
-// Fluxo de Controle
+//  - Fluxo de Controle
 var theNumber = Number(prompt("Escolha um número", ""));
 alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
 
-// Execução Condicional
+//  - Execução Condicional
 
 var theNumber = Number(prompt("Digite um número", ""));
 if (!isNaN(theNumber))
@@ -68,12 +68,11 @@ if (!isNaN(theNumber))
 var theNumber = Number(prompt("Digite um número", ""));
 
 /*
- !isNaN - é uma função que retorna "true"(verdadeiro) se o argumento dado a ela é NaN.
- NaN significa “not a number” (não é um número). A função Number retorna NaN quando você
- fornece a ela uma string que não representa um número válido.
+    !isNaN - é uma função que retorna "true"(verdadeiro) se o argumento dado a ela é NaN.
+    NaN significa “not a number” (não é um número). A função Number retorna NaN quando você
+    fornece a ela uma string que não representa um número válido.
 
- Então, salvo que theNumber não seja um número, faça isso.
-
+    Então, salvo que theNumber não seja um número, faça isso.
 */
 if (!isNaN(theNumber))
     alert("Seu número é a raiz quadrada de " + theNumber * theNumber);
@@ -89,7 +88,7 @@ else if (num < 100)
 else
     alert("Grande");
 
-//fluxo de controle do loop
+//  - fluxo de controle do loop
 var number = 0;
 while (number <= 12) {
     console.log(number);

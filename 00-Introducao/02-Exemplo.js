@@ -1,6 +1,7 @@
-//  Indrodução
-//  Conveções Tipográficas
 /*
+    • Indrodução
+    - Conveções Tipográficas
+
     É muito simples definir ou declarar uma função e atribuir uma tarefa a ela.
     Uma função é um conjunto de instruções que executa uma tarefa.
 
@@ -23,5 +24,4 @@ console.log(fac(8)); //40320
     Executar uma função é bem simples, você pode fazer do seguindo modo fac();
     Então vamos ler novamete as instrução do console.log, execute e exiba no console a
     função "fac" onde "n" é igual a 8.
-
 */
