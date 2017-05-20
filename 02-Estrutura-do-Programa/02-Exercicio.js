@@ -15,6 +15,9 @@
 
 //  - FizzBuzz com Loop FOR
 for (var counter = 0; counter <= 100; counter++){
-    console.log(counter);
+    if (counter % 3 == 0)
+        console.log("Fizz");
+    else
+        console.log(counter);
 }
 
