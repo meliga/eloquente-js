@@ -24,15 +24,19 @@
     largura e altura fornecida.
 */
 
-var row = ' ';
+var row = '';
 var size = 8;
 
 
 for (counter = 0; counter < size; counter++)
     if (counter % 2 == 0)
-        row = row + "#";
+        row += "#";
     else
-        row = row + " ";
+        row += " ";
 
     for (i = 0; i < size; i++)
-        console.log(i + " " + row);
+        if (i % 2 != 0)
+            console.log(" " + row);
+        else
+            console.log(row);
+
