@@ -1,5 +1,8 @@
 /*
-    • FizzBuzz
+    • Capítulo 2
+    Estrutura do Programa
+
+    - FizzBuzz
     Escreva um programa que imprima (usando console.log()) todos os números de 1 a 100,
     exceto que, para números divisíveis por 3, ele imprima Fizz ao invés do número, e
     para números divisíveis por 5 (e não 3), ele imprima Buzz.
