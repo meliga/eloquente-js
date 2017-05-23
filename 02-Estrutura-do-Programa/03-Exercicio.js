@@ -29,14 +29,12 @@ var size = 8;
 
 for (grid = 0; grid < size; grid++)
     // espaçamento entre os caracteres "# # # #"
-    if (grid % 2 == 0)
-        row += "#";
-    else
-        row += " ";
+    row += (grid % 2 == 0) ? '#' : ' ';
     // indentação das linhas
     for (i = 0; i < size; i++)
         if (i % 2 != 0)
             console.log(" " + row);
         else
             console.log(row);
+
 
