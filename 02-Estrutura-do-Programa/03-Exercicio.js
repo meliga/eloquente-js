@@ -31,6 +31,7 @@ for (grid = 0; grid < size; grid++)
     // espaçamento entre os caracteres "# # # #"
     row += (grid % 2 == 0) ? '#' : ' ';
     // indentação das linhas
+
     for (i = 0; i < size; i++)
         if (i % 2 != 0)
             console.log(" " + row);
