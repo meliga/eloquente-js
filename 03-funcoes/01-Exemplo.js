@@ -87,3 +87,47 @@ console.log(power(4));
 // → 16
 console.log(power(4, 3));
 // → 64
+/*
+    - Exemplo 16
+    Recursão
+    É perfeitamente aceitável uma função invocar a si mesma,
+    contanto que se tenha cuidado para não sobrecarregar a
+    pilha de chamadas. Uma função que invoca a si
+    mesma é denominada recursiva.
+ */
+function power(base, exponent) {
+    if (exponent == 0)
+        return 1;
+    else
+        return base * power(base, exponent - 1); // 2 * power(2, 3 - 1);
+}
+
+console.log(power(2, 3));
+// → 8
+
+/*
+    - Exemplo 17
+    Considere este quebra-cabeça: iniciando com o número 1 e
+    repetidamente adicionando 5 ou multiplicando por 3, uma
+    infinita quantidade de novos números pode ser produzida.
+    Como você implementaria uma função que, dado um número,
+    tenta achar a sequência de adições e multiplicações que
+    produzem esse número? Por exemplo, o número 13 pode ser
+    produzido multiplicando-se por 3 e adicionando-se 5 duas
+    vezes. Já o número 15 não pode ser produzido de nenhuma forma.
+*/
+function findSolution(target) {
+    function find(start, history) {
+        if (start == target)
+            return history;
+        else if (start > target)
+            return null;
+        else
+            return find(start + 5, “(“ + history + “ + 5)”) ||
+        find(start * 3, “(“ + history + “ * 3)”);
+    }
+    return find(1, “1”);
+}
+
+console.log(findSolution(24));
+// → (((1 * 3) + 5) * 3)
