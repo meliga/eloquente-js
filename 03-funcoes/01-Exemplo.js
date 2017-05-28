@@ -35,3 +35,55 @@ var power = function(base, exponent) {
 
 console.log(power(2, 10));
 // → 1024
+
+/*
+    - Exemplo 4
+    Escopo Aninhado
+    O JavaScript não se distingue apenas pela diferenciação entre
+    variáveis locais e globais. Funções também podem ser criadas
+    dentro de outras funções, criando vários níveis de “localidades”.
+ */
+var landscape = function() {
+    var result = "";
+    var flat = function(size) {
+        for (var count = 0; count < size; count++)
+            result += "_";
+    };
+    var mountain = function(size) {
+        result += "/";
+        for (var count = 0; count < size; count++)
+            result += "'";
+        result += "\\";
+    };
+
+    flat(3);
+    mountain(4);
+    flat(6);
+    mountain(1);
+    flat(1);
+    return result;
+};
+
+console.log(landscape());
+// → ___/''''\______/'\_
+/*
+    - Exemplo 12
+    Argumentos Opcionais
+    A variável POWER pode ser chamada com um ou dois argumentos.
+    No caso de ser invocada com apenas um argumento,
+    ela assumirá o valor 2 para o expoente e a função
+    se comportará com um expoente ao quadrado.
+ */
+function power(base, exponent) {
+    if (exponent == undefined)
+        exponent = 2;
+    var result = 1;
+    for (var count = 0; count < exponent; count++)
+        result *= base;
+    return result;
+}
+
+console.log(power(4));
+// → 16
+console.log(power(4, 3));
+// → 64
